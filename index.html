@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- 設定手機與平板的響應式顯示 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- 設定網頁標題 -->
+    <title>臺灣名產大挑戰</title>
+
+    <!-- 預先連線到 Google Fonts 主網域 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- 預先連線到 Google Fonts 字型檔案網域 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- 載入 Chiron GoRound TC 繁體中文字型 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* 讓 HTML 與 BODY 填滿整個視窗 */
+      html,
+      body {
+        /* 設定寬度填滿視窗 */
+        width: 100%;
+
+        /* 設定高度填滿視窗 */
+        height: 100%;
+
+        /* 移除瀏覽器預設外距 */
+        margin: 0;
+
+        /* 移除瀏覽器預設內距 */
+        padding: 0;
+
+        /* 隱藏網頁整體捲軸 */
+        overflow: hidden;
+
+        /* 設定網頁背景顏色 */
+        background: #fff4d6;
+
+        /* 套用 Google 字型 */
+        font-family: "Chiron GoRound TC", sans-serif;
+
+        /* 防止手機長按選取文字 */
+        user-select: none;
+
+        /* 防止觸控時瀏覽器自行滾動 */
+        touch-action: none;
+      }
+
+      /* 讓畫布以區塊形式顯示 */
+      canvas {
+        /* 移除畫布下方可能產生的空白 */
+        display: block;
+
+        /* 讓畫布寬度填滿瀏覽器 */
+        width: 100vw;
+
+        /* 讓畫布高度填滿瀏覽器 */
+        height: 100vh;
+
+        /* 防止觸控時瀏覽器自行滾動 */
+        touch-action: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 載入 p5.js 程式庫 -->
+    <script src="libraries/p5.min.js"></script>
+
+    <!-- 載入測驗程式 -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
